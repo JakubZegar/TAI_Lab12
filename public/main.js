@@ -372,7 +372,7 @@ var AddPostComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button class=\"btn btn-primary\" style=\"margin: 5px;\" [routerLink]=\"['/add-post']\">Dodaj post</button>\n<search-bar (name)=\"getName($event)\"></search-bar>\n<blog [filterText]=\"filterText\"></blog>\n"
+module.exports = "<search-bar (name)=\"getName($event)\"></search-bar>\n<blog [filterText]=\"filterText\"></blog>\n"
 
 /***/ }),
 
@@ -1238,7 +1238,7 @@ var TextFormatDirective = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\" nav justify-content-between\">\n  <ul class=\"nav\">\n    <li class=\"nav-item\"><a [routerLink]=\"['/']\">Home</a></li>\n    <li class=\"nav-item\"><a [routerLink]=\"['/blog']\">Blog</a></li>\n    <li class=\"nav-item\"><a [routerLink]=\"['/contact']\">Kontakt</a></li>\n  </ul>\n  <ul class=\"nav\">\n    <li class=\"nav-item\" *ngIf=\"!authService.currentUser\"><a [routerLink]=\"['/login']\">Zaloguj się</a></li>\n    <li class=\"nav-item\" *ngIf=\"!authService.currentUser\"><a [routerLink]=\"['/signup']\">Zarejestruj się</a></li>\n    <li class=\"nav-item\" *ngIf=\"authService.currentUser\"><a [routerLink]=\"\" (click)=\"logOut()\">Wyloguj się</a></li>\n  </ul>\n\n</nav>\n"
+module.exports = "<nav class=\" nav justify-content-between\">\n  <ul class=\"nav\">\n    <li class=\"nav-item\"><a [routerLink]=\"['/']\">Home</a></li>\n    <li class=\"nav-item\"><a [routerLink]=\"['/blog']\">Blog</a></li>\n    <li class=\"nav-item\"><a [routerLink]=\"['/contact']\">Kontakt</a></li>\n    <li class=\"nav-item\"><a [routerLink]=\"['/add-post']\">Dodaj post</a></li>\n    <li class=\"nav-item\" *ngIf=\"!authService.currentUser\"><a [routerLink]=\"['/login']\">Zaloguj się</a></li>\n    <li class=\"nav-item\" *ngIf=\"!authService.currentUser\"><a [routerLink]=\"['/signup']\">Zarejestruj się</a></li>\n    <li class=\"nav-item\" *ngIf=\"authService.currentUser\"><a [routerLink]=\"\" (click)=\"logOut()\">Wyloguj się</a></li>\n  </ul>\n\n</nav>\n"
 
 /***/ }),
 
